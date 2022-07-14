@@ -5,9 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="box-border pb-4 m-0">
   <h1 class="text-3xl font-bold bg-gray-900 text-white">
-    Hello world!
+    Break- Utilities
   </h1>
+  <div class="columns-3">
+    <div class="p-3">Lorem ipsum dolor sit amet.1</div>
+    <div class="p-3 break-after-all">Lorem ipsum dolor sit amet.2</div>
+    <div class="p-3">Lorem ipsum dolor sit amet.3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, earum.</div>
+    <div class="p-3">Lorem ipsum dolor sit amet.4</div>
+  </div>
+  <div class="columns-1">
+    <p>Well, let me tell you something, ...</p>
+    <p>Sure, go ahead, laugh...</p>
+    <p>Maybe we can live without...</p>
+    <p>Look. If you think this is...</p>
+  </div>
+  <h1 class="text-3xl font-bold bg-gray-900 text-white">
+    Box Decoration Break
+  </h1>
+  <span class="box-decoration-slice hover:box-decoration-clone bg-gradient-to-r from-indigo-500 to-indigo-900 text-white px-2 text-3xl ">
+    Uttam <br> Kumar Pal
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, corrupti?
+  </span> <br>
+  <span class="box-decoration-clone hover:box-decoration-slice bg-gradient-to-r from-indigo-500 to-indigo-900 text-white px-4 text-3xl">
+    Uttam <br> 
+    Kumar Pal <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, corrupti?
+  </span>
+  <h1 class="text-3xl font-bold bg-gray-900 text-white">
+    Box Sizing
+  </h1>
+  <div class="box-border bordered p-4 m-4 w-1/4 bg-black text-white text-center hover:box-content">
+    Box border
+  </div>
+  <h1 class="text-3xl font-bold bg-gray-900 text-white">
+    Display
+  </h1>
+  <div>
+    When controlling the flow of text, using the CSS property
+    <span class="inline bg-red-400">display: inline</span>
+    will cause the text inside the element to wrap normally.
+  
+    While using the property <span class="inline-block bg-red-400">display: inline-block</span>
+    will wrap the element to prevent the text inside from extending beyond its parent.
+  
+    Lastly, using the property <span class="block bg-red-400">display: block</span>
+    will put the element on its own line and fill its parent.
+  </div>
+  <div class="p-4">
+    <div class="flow-root">
+        <div class="my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, numquam?
+        </div>
+        <div class="my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, numquam?
+        </div>
+    </div>
+    <div class="flow-root">
+        <div class="my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolorum.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, numquam?
+        </div>
+    </div>
+  </div>
+  <div class="flex  bg-slate-900 p-4 justify-center">
+    <img src="./img/Img107.jpg" class="w-1/2 m-4 flex-1" alt="">
+    <div class="w-1/2 my-4 text-white flex-1" >
+        <strong>MR. Cat </strong> <br>
+        <span>Tailwind Expart</span>
+        <p class="py-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias voluptas perspiciatis nesciunt facere incidunt explicabo porro officia ad consectetur!</p>
+    </div>
+  </div>
+  <div class="grid gap-4 grid-cols-3 grid-rows-3 bg-sky-400 justify-center items-center">
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600">box</div>
+    <div class="p-4 bg-slate-600 hidden">box</div>
+  </div>
+  <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white">
+    Float 
+  </h1>
+  <div class="clear-both p-5">
+    <img src="/img/Img114.jpg" alt="" class="float-right w-48 p-2 hover:float-left">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perferendis officia, ex hic et ipsum praesentium atque inventore, laboriosam temporibus molestiae, explicabo itaque dolor dicta nisi sequi fuga vel nihil necessitatibus. Esse aperiam, repudiandae vel eaque temporibus ullam. Quos, dolorum quod mollitia inventore, odio ipsam hic recusandae facilis nesciunt illum fugit suscipit nobis laborum culpa, ad quas consectetur iusto sint at! Numquam, fuga? Enim, debitis quae, nostrum aperiam voluptate minima fuga eligendi nobis non, nihil molestiae neque error beatae quos quasi. Iusto eaque iure, quas non dolores laboriosam veniam quos quidem fugit! Error quis quos maxime hic ullam! Nemo, nihil.</p>
+  </div>
+  <div class="clearfix p-5">
+    <img src="/img/Img114.jpg" alt="" class="float-left w-48 p-2 hover:float-right">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perferendis officia, ex hic et ipsum praesentium atque inventore, laboriosam temporibus molestiae, explicabo itaque dolor dicta nisi sequi fuga vel nihil necessitatibus. Esse aperiam, repudiandae vel eaque temporibus ullam. Quos, dolorum quod mollitia inventore, odio ipsam hic recusandae facilis nesciunt illum fugit suscipit nobis laborum culpa, ad quas consectetur iusto sint at! Numquam, fuga? Enim, debitis quae, nostrum aperiam voluptate minima fuga eligendi nobis non, nihil molestiae neque error beatae quos quasi. Iusto eaque iure, quas non dolores laboriosam veniam quos quidem fugit! Error quis quos maxime hic ullam! Nemo, nihil.</p>
+  </div>
+  <div class="p-5">
+    <img src="/img/Img94.jpg" alt="" class="float-right w-48">
+    <img src="/img/Img95.jpg" alt="" class="float-left w-32">
+    <p class="clear-left hover:clear-both">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, enim explicabo! Alias quos deserunt non, voluptate corrupti incidunt voluptas dicta cumque, id eveniet adipisci at eius laborum magni iure eum modi tenetur et atque cum! Dolore iste, facilis tempore inventore explicabo debitis perferendis ut eligendi ipsam optio sint delectus soluta rerum libero eaque culpa et, suscipit ea nisi repellendus aperiam! Iusto assumenda laboriosam saepe natus error perspiciatis ab fuga perferendis laudantium ad aliquid eos fugit veniam optio consequuntur quia odit, non eligendi fugiat iure molestiae temporibus modi quibusdam. Ab officiis similique ex magni? Ipsum minima, blanditiis accusantium laboriosam ratione ut.
+    </p>
+  </div>
+  <div class="isolate hover:isolation-auto p-4">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim porro ducimus ut facilis suscipit incidunt nemo aliquid quam qui!</p>
+  </div>
+  <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white">
+    Object Fit 
+  </h1>
+  <div class="bg-indigo-300 p-2 mb-2">
+    <img src="/img/Img102.jpg" alt="" class="object-contain object-center h-48 w-96 mx-auto">
+  </div>
+  <div class="bg-indigo-300 p-2 mb-2">
+    <img src="/img/Img102.jpg" alt="" class="object-cover object-bottom h-48 w-96 mx-auto">
+  </div>
+  <div class="bg-indigo-300 p-2 mb-2">
+    <img src="/img/Img102.jpg" alt="" class="object-fill h-48 w-96 mx-auto">
+  </div>
+  <div class="bg-indigo-300 p-2 mb-2">
+    <img src="/img/Img102.jpg" alt="" class="object-scale-down h-48 w-96 mx-auto">
+  </div>
+  <div class="bg-indigo-300 p-2 mb-2">
+    <img src="/img/Img102.jpg" alt="" class="object-none h-48 w-96 mx-auto">
+  </div>
+  <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white">
+    Overflow 
+  </h1>
+  <div class="bg-indigo-300 p-2 m-2 rounded overflow-auto">
+    <div class="w-96 h-32 flex pl-4 gap-3 justify-start items-center bg-slate-700 mx-auto rounded-xl overflow-visible">
+        <img src="/img/Img107.jpg" alt="" class="object-cover object-left h-24 w-24 rounded-full overflow-visible">
+        <div class="text-white">
+            <strong>MR. Cat</strong>
+            <p>Tailwind Expart</p>
+        </div>
+    </div>
+    
+  </div>
 </body>
 </html>
