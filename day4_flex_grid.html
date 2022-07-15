@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box and Grid</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white sticky top-0">
+        Flex Basis
+    </h1>
+    <div class="flex flex-row bg-slate-900 gap-3 h-24 text-center">
+        <div class="basis-1/4 hover:basis-1/2 bg-indigo-300">1/4</div>
+        <div class="basis-1/4 bg-indigo-300">1/4</div>
+        <div class="basis-1/2 bg-indigo-300">1/2</div>
+        <div class="basis-full bg-indigo-300">full</div>
+    </div>
+    <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white sticky top-0">
+        Flex Wrap
+    </h1>
+    <div class="flex flex-nowrap flex-row bg-slate-900 gap-3 h-24 text-center">
+        <div class="basis-48  bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/2</div>
+        <div class="basis-48 bg-indigo-300">full</div>
+    </div>
+    <div class="flex flex-wrap flex-row bg-slate-900 gap-3 h-24 text-center my-3">
+        <div class="basis-48 bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/2</div>
+        <div class="basis-48 bg-indigo-300">full</div>
+    </div>
+    <div class="flex flex-wrap-reverse flex-row bg-slate-900 gap-3 h-24 text-center my-3">
+        <div class="basis-48 bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/4</div>
+        <div class="basis-48 bg-indigo-300">1/2</div>
+        <div class="basis-48 bg-indigo-300">full</div>
+    </div>
+    <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white sticky top-0">
+        Flex
+    </h1>
+    <div class="flex bg-slate-900 h-32 p-3 gap-3">
+        <div class="flex-none w-14 h-24 bg-indigo-900">
+            None h-24 w-14
+        </div>
+        <div class="flex-1 w-14 h-24 bg-indigo-900">
+            flex-1 h-24 w-14
+        </div>
+        <div class="flex-initial w-14 h-24 bg-indigo-900">
+            initial h-24 w-14
+        </div>
+    </div>
+    <div class="flex bg-slate-900 h-32 p-3 gap-3 my-3">
+        <div class="flex-none hover:grow w-14 h-24 bg-indigo-900">
+            None h-24 w-14 hover:grow
+        </div>
+        <div class="flex-1 hover:grow-0 w-14 h-24 bg-indigo-900">
+            flex-1 h-24 w-14
+        </div>
+        <div class="flex-auto hover:grow-0 w-14 h-24 bg-indigo-900">
+            auto h-24 w-14
+        </div>
+    </div>
+    <h1 class="text-3xl font-bold bg-gray-900 my-3 text-white sticky top-0">
+        Order
+    </h1>
+    <div class="flex bg-slate-700 h-12 p-3 gap-4">
+        <div class="order-last">1</div>
+        <div class="order-10">2</div>
+        <div class="order-12">3</div>
+        <div class="order-first">4</div>
+        <div class="order">5</div>
+        <div class="order">6</div>
+        <div class="order">7</div>
+        <div class="order">8</div>
+        <div class="order">9</div>
+        <div class="order">10</div>
+        <div class="order">11</div>
+    </div>
+</body>
+</html>
